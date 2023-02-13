@@ -1,0 +1,169 @@
+.right-side-container {
+  header {
+    h1 {
+      color: $primary-marine-blue-color;
+      font-size: 4rem;
+      font-weight: 700;
+      font-family: $primary-ubuntu-font;
+    }
+    p {
+      color: $neutral-cool-gray-color;
+      font-size: 1.6rem;
+      font-family: $primary-ubuntu-font;
+    }
+  }
+  .err-msg {
+    position: absolute;
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: block;
+    top: -3rem;
+    right: 0rem;
+    font-family: $primary-ubuntu-font;
+  }
+  .radio-label {
+    height: 95%;
+    width: 18rem;
+    border: 0.1rem solid $neutral-cool-gray-color;
+    border-radius: 1.3rem;
+    cursor: pointer;
+    .item-plan {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-left: 1.3rem;
+      color: $primary-marine-blue-color;
+      font-family: $primary-ubuntu-font;
+    }
+    .item-sub-cost {
+      color: $neutral-cool-gray-color;
+      font-size: 1.4rem;
+      margin-left: 1.3rem;
+      font-family: $primary-ubuntu-font;
+    }
+    .yearly-sub-benifits {
+      font-size: 1.6rem;
+      margin-left: 1.3rem;
+      color: $primary-marine-blue-color;
+      margin-bottom: 0.8rem;
+      font-family: $primary-ubuntu-font;
+    }
+  }
+  .option-name {
+    font-size: 1.6rem;
+    color: $primary-marine-blue-color;
+    font-family: $primary-ubuntu-font;
+  }
+  .option-description {
+    font-size: 1.4rem;
+    color: $neutral-cool-gray-color;
+    font-family: $primary-ubuntu-font;
+  }
+
+  .additioanl-fees-span {
+    font-size: 1.4rem;
+    color: $primary-purplish-blue-color;
+    align-self: center;
+    font-family: $primary-ubuntu-font;
+  }
+  .first-sub-colored-wrapper {
+    h4 {
+      font-family: $primary-ubuntu-font;
+      color: $primary-marine-blue-color;
+      font-weight: 500;
+      font-size: 1.6rem;
+      margin-bottom: 0.1rem;
+    }
+    a {
+      color: $neutral-cool-gray-color;
+      font-family: $primary-ubuntu-font;
+      font-size: 1.2rem;
+      &:hover {
+        color: $primary-purplish-blue-color;
+      }
+    }
+  }
+  .chosen-ons-name {
+    font-family: $primary-ubuntu-font;
+    font-size: 1.4rem;
+    color: $neutral-cool-gray-color;
+  }
+  .chosen-ons-cost {
+    color: $primary-marine-blue-color;
+    font-size: 1.4rem;
+  }
+  .sub-type {
+    font-family: $primary-ubuntu-font;
+    font-size: 1.4rem;
+    color: $neutral-cool-gray-color;
+  }
+  .total-cost {
+    font-size: 2rem;
+    color: $primary-purplish-blue-color;
+    font-weight: 700;
+    font-family: $primary-ubuntu-font;
+  }
+  .first-sub-colored-wrapper {
+    h4 {
+      font-family: $primary-ubuntu-font;
+      color: $primary-marine-blue-color;
+      font-weight: 500;
+      font-size: 1.6rem;
+      margin-bottom: 0.1rem;
+    }
+    a {
+      color: $neutral-cool-gray-color;
+      font-family: $primary-ubuntu-font;
+      font-size: 1.2rem;
+      &:hover {
+        color: $primary-purplish-blue-color;
+      }
+    }
+    .plan-cost {
+      font-family: $primary-ubuntu-font;
+      color: $primary-marine-blue-color;
+      font-weight: 700;
+      font-size: 1.6rem;
+      padding-top: 1.5rem;
+    }
+  }
+  .second-sub-colored-wrapper {
+    .chosen-ons-name {
+      font-family: $primary-ubuntu-font;
+      font-size: 1.4rem;
+      color: $neutral-cool-gray-color;
+    }
+    .chosen-ons-cost {
+      color: $primary-marine-blue-color;
+      font-size: 1.4rem;
+    }
+  }
+  .total-cost-wrapper {
+    .sub-type {
+      font-family: $primary-ubuntu-font;
+      font-size: 1.4rem;
+      color: $neutral-cool-gray-color;
+    }
+    .total-cost {
+      font-size: 2rem;
+      color: $primary-purplish-blue-color;
+      font-weight: 700;
+      font-family: $primary-ubuntu-font;
+    }
+  }
+  .thanking-msg-wrapper {
+    h1 {
+      font-family: $primary-ubuntu-font;
+      font-size: 3rem;
+      font-weight: 700;
+      color: $primary-marine-blue-color;
+      margin: 4.5rem 0rem 2rem 0rem;
+    }
+    p {
+      font-family: $primary-ubuntu-font;
+      color: $neutral-cool-gray-color;
+
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,0 +1,208 @@
+@import "./media.scss";
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/functions";
+
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/helpers";
+
+@import "./components/buttons";
+@import "./components/slider";
+
+@import "./layout/footer";
+@import "./layout/forms";
+@import "./layout/header";
+@import "./layout/navigation";
+@import "./layout/sidebar";
+
+@import "./pages/about";
+@import "./pages/contact";
+@import "./pages/home";
+
+html {
+  font-size: 10px;
+  body {
+    margin: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    font-family: $primary-ubuntu-font;
+    padding: 1rem;
+    .auth-wrapper {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: $neutral-white-color;
+      .right-side-container {
+        padding: 3rem 20rem 0rem 20rem;
+        width: 50%;
+        height: 80%;
+        header {
+          margin-bottom: 4rem;
+        }
+        .subForm {
+          justify-content: space-between;
+          // First Step Wrapper
+          .first-step-form-wrapper {
+            height: 25rem;
+            justify-content: space-between;
+            .form-field {
+              width: 100%;
+              position: relative;
+              .input-field {
+                font-size: 1.6rem !important;
+                color: $primary-marine-blue-color !important;
+                font-family: $primary-ubuntu-font;
+              }
+              .phone-prefix {
+                padding-left: 1rem;
+              }
+            }
+          }
+          // Second Step Wrapper
+          form {
+            .plans-container {
+              gap: 4rem;
+              .plans-label-container {
+                display: flex;
+                width: 100%;
+                margin: 0 auto;
+                gap: 2.8rem;
+                .radio-wrapper {
+                  .radio-input {
+                    opacity: 0;
+                  }
+
+                  img {
+                    width: 5rem;
+                    margin: 2.2rem auto 5.3rem 1.5rem;
+                  }
+
+                  .radio-input:checked {
+                    & + .radio-label {
+                      background-color: $neutral-magnolia-color;
+                      border: 0.1rem solid $primary-marine-blue-color;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          // Third Step Wrapper
+          .ons-wrapper {
+            display: flex;
+            flex-direction: row;
+            background-color: $neutral-white-color;
+            gap: 2.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            cursor: pointer;
+            .ons-label {
+              cursor: pointer;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              width: 100%;
+              border: 0.1rem solid $neutral-cool-gray-color;
+              border-radius: 1rem;
+              padding: 2rem;
+            }
+            input {
+              width: 1.8rem;
+              cursor: pointer;
+              position: absolute;
+              margin: 3.3rem 2rem;
+            }
+            input:checked {
+              & + .ons-label {
+                border: 0.1rem solid $primary-marine-blue-color;
+                background-color: $neutral-magnolia-color;
+                border-radius: 1rem;
+              }
+            }
+
+            .ons-spans-wrapper {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              margin-left: 5rem;
+              width: 50rem;
+            }
+          }
+          // Fourth Step
+          .confirmation-wrapper {
+            border-radius: 0.5rem;
+            width: 100%;
+            height: 25rem;
+            justify-content: space-between;
+            .colored-wrapper {
+              background-color: $neutral-magnolia-color;
+              width: 100%;
+              height: fit-content;
+              border-radius: 1rem;
+
+              .first-sub-colored-wrapper {
+                display: flex;
+                justify-content: space-between;
+                width: 90%;
+                margin: 0 auto;
+                padding: 1rem;
+              }
+              hr {
+                width: 87%;
+                color: $neutral-light-gray-color;
+              }
+              .second-sub-colored-wrapper {
+                display: flex;
+                justify-content: space-between;
+                width: 90%;
+                margin: 0 auto;
+                padding: 1rem;
+                .chosen-ons-name {
+                  font-family: $primary-ubuntu-font;
+                  font-size: 1.4rem;
+                  color: $neutral-cool-gray-color;
+                }
+                .chosen-ons-cost {
+                  color: $primary-marine-blue-color;
+                  font-size: 1.4rem;
+                }
+              }
+            }
+            .total-cost-wrapper {
+              height: 4rem;
+              display: flex;
+              justify-content: space-between;
+              width: 90%;
+              margin: 2rem auto;
+            }
+          }
+        }
+        // success message
+        .thanking-msg-wrapper {
+          width: 55rem;
+          margin: 9rem 0rem;
+          text-align: center;
+          img {
+            width: 8rem;
+            margin: 0 auto;
+          }
+          h1 {
+            font-family: $primary-ubuntu-font;
+            font-size: 3rem;
+            font-weight: 700;
+            color: $primary-marine-blue-color;
+            margin: 4.5rem 0rem 2rem 0rem;
+          }
+          p {
+            font-family: $primary-ubuntu-font;
+            color: $neutral-cool-gray-color;
+
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
