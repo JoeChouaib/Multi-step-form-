@@ -1,4 +1,3 @@
-@import "./media.scss";
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
 @import "./abstracts/functions";
@@ -35,9 +34,9 @@ html {
       height: 100%;
       background-color: $neutral-white-color;
       .right-side-container {
-        padding: 3rem 20rem 0rem 20rem;
-        width: 50%;
-        height: 80%;
+        padding: 4% 16%;
+        width: 56%;
+        height: 84%;
         header {
           margin-bottom: 4rem;
         }
@@ -51,9 +50,8 @@ html {
               width: 100%;
               position: relative;
               .input-field {
-                font-size: 1.6rem !important;
-                color: $primary-marine-blue-color !important;
-                font-family: $primary-ubuntu-font;
+                font: 1.6rem $primary-ubuntu-font;
+                color: $primary-marine-blue-color;
               }
               .phone-prefix {
                 padding-left: 1rem;
@@ -68,8 +66,9 @@ html {
                 display: flex;
                 width: 100%;
                 margin: 0 auto;
-                gap: 2.8rem;
+                gap: 2rem;
                 .radio-wrapper {
+                  width: 31%;
                   .radio-input {
                     opacity: 0;
                   }
@@ -106,7 +105,7 @@ html {
               width: 100%;
               border: 0.1rem solid $neutral-cool-gray-color;
               border-radius: 1rem;
-              padding: 2rem;
+              height: 8rem;
             }
             input {
               width: 1.8rem;
@@ -126,8 +125,11 @@ html {
               display: flex;
               flex-direction: row;
               justify-content: space-between;
-              margin-left: 5rem;
-              width: 50rem;
+              margin-left: 8rem;
+              width: 80%;
+              .ons-text-wrapper {
+                justify-content: center;
+              }
             }
           }
           // Fourth Step
@@ -160,13 +162,12 @@ html {
                 margin: 0 auto;
                 padding: 1rem;
                 .chosen-ons-name {
-                  font-family: $primary-ubuntu-font;
-                  font-size: 1.4rem;
+                  font: 1.4rem $primary-ubuntu-font;
                   color: $neutral-cool-gray-color;
                 }
                 .chosen-ons-cost {
+                  font: 1.4rem $primary-ubuntu-font;
                   color: $primary-marine-blue-color;
-                  font-size: 1.4rem;
                 }
               }
             }
@@ -181,7 +182,7 @@ html {
         }
         // success message
         .thanking-msg-wrapper {
-          width: 55rem;
+          width: 100%;
           margin: 9rem 0rem;
           text-align: center;
           img {
@@ -189,20 +190,285 @@ html {
             margin: 0 auto;
           }
           h1 {
-            font-family: $primary-ubuntu-font;
-            font-size: 3rem;
-            font-weight: 700;
+            font: 700 3rem $primary-ubuntu-font;
             color: $primary-marine-blue-color;
             margin: 4.5rem 0rem 2rem 0rem;
           }
           p {
-            font-family: $primary-ubuntu-font;
             color: $neutral-cool-gray-color;
-
-            font-size: 2rem;
+            font: 2rem $primary-ubuntu-font;
           }
         }
       }
     }
+  }
+}
+
+// bigger screens Desktop
+
+@media only screen and (min-width: 1365px) {
+  html {
+    font-size: 13px;
+  }
+  .step-number {
+    padding: 0.8rem 1.1rem !important;
+  }
+}
+@media only screen and (min-width: 1679px) {
+  html {
+    font-size: 15px;
+  }
+  .step-number {
+    padding: 0.8rem 1rem !important;
+  }
+}
+@media only screen and (min-width: 1919px) {
+  html {
+    font-size: 17px;
+  }
+  .step-number {
+    padding: 0.8rem 1rem !important;
+  }
+}
+
+// Tablet Media Queries
+
+@media only screen and (max-width: 769px) {
+  html {
+    font-size: 9px;
+    body {
+      padding: 0rem;
+      .auth-wrapper {
+        flex-direction: column;
+        background-color: $neutral-magnolia-color;
+        // sidebar
+        .sidebar-container {
+          width: 100%;
+          height: 18.5%;
+          background-image: url(../images/bg-sidebar-mobile.svg);
+          ul {
+            display: flex;
+            gap: 5%;
+            padding: 2rem 0rem 0rem;
+            width: 40%;
+            justify-content: center;
+            margin: 0 auto;
+            .step-number {
+              padding: 1.6rem 2.4rem;
+            }
+            .step-descriprion {
+              display: none;
+            }
+          }
+        }
+        .right-side-container {
+          background-color: $neutral-white-color;
+          width: 83%;
+          height: 50%;
+          padding: 3rem 2rem;
+          margin: -5rem auto;
+          border-radius: 1.7rem;
+          header {
+            margin-bottom: 3rem;
+            h1 {
+              font-size: 2.5rem;
+              margin-bottom: 2rem;
+            }
+          }
+          .first-step-form-wrapper {
+            height: 26rem;
+            justify-content: space-between;
+            .form-field {
+              .input-field {
+                font-size: 2rem !important;
+              }
+              .err-msg {
+                top: -2.5rem;
+              }
+              .mat-mdc-form-field-infix {
+                padding-top: 2.5rem !important;
+                height: 8rem;
+              }
+            }
+            .column-flexed-wrapper .first-step-label {
+              margin-bottom: 0.4rem;
+              font-size: 1.6rem;
+            }
+          }
+          .btns {
+            position: absolute;
+            background-color: $neutral-albaster-color;
+            bottom: 0rem;
+            left: 0rem;
+            padding: 6%;
+            width: 88%;
+            .mat-mdc-raised-button.mat-mdc-button-base {
+              width: 12rem;
+              height: 3.3rem;
+              .mdc-button__label {
+                font-size: 1.24rem;
+              }
+            }
+          }
+        }
+        // second step
+        .plans-container {
+          gap: 2rem;
+          .plans-label-container {
+            flex-direction: column;
+            gap: 0rem !important;
+            .radio-wrapper {
+              width: 100% !important;
+              .radio-label {
+                height: 8rem;
+                width: 100%;
+                flex-direction: row;
+                img {
+                  width: 3.5rem !important;
+                  margin: 1rem !important;
+                }
+                .item-plan {
+                  padding-top: 1rem;
+                  font-size: 1.2rem;
+                }
+
+                .yearly-sub-benifits {
+                  font-size: 1.4rem;
+                }
+              }
+            }
+          }
+          .toggle-switch-container {
+            width: 100%;
+          }
+        }
+        // Ons
+
+        .ons-wrapper {
+          margin-bottom: 4rem !important;
+
+          .ons-spans-wrapper {
+            margin-left: 5rem !important;
+            .option-name {
+              font-size: 1.8rem;
+            }
+            .option-description {
+              font-size: 1.6rem;
+            }
+
+            .additioanl-fees-span {
+              font-size: 1.6rem;
+            }
+          }
+        }
+        // confirmation
+        .colored-wrapper {
+          width: 100%;
+        }
+        .total-cost-wrapper {
+          width: 90%;
+          margin: 2.5rem 0rem 0rem 2rem;
+        }
+        // success msg
+        .thanking-msg-wrapper {
+          img {
+            width: 6rem !important;
+          }
+          h1 {
+            margin: 2.5rem 0rem 2rem 0rem !important;
+          }
+          p {
+            font-size: 1.6rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Phone
+@media only screen and (max-width: 361px) {
+  html {
+    font-size: 8px;
+    body {
+      .auth-wrapper {
+        .sidebar-container {
+          ul {
+            width: 51%;
+            .step-number {
+              padding: 0.6rem 1.4rem !important;
+            }
+          }
+        }
+        .right-side-container {
+          margin: -2rem auto;
+          height: 57%;
+
+          .first-step-form-wrapper {
+            .form-field {
+              .input-field {
+                font-size: 1.6rem !important;
+              }
+              .err-msg {
+                top: -2rem;
+              }
+              .mat-mdc-form-field-infix {
+                padding-top: 1rem !important;
+                height: 5rem;
+              }
+            }
+          }
+        }
+        // second step
+        .plans-container {
+          gap: 3rem !important;
+          .plans-label-container {
+            flex-direction: column;
+            gap: 0.5rem !important;
+            .radio-wrapper {
+              width: 100% !important;
+              .radio-label {
+                height: 6rem;
+
+                img {
+                  width: 3.5rem !important;
+                  margin: 1rem !important;
+                }
+                .item-plan {
+                  padding-top: 1rem;
+                  font-size: 1.2rem;
+                }
+
+                .yearly-sub-benifits {
+                  font-size: 1.4rem;
+                }
+              }
+            }
+          }
+          .toggle-switch-container {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .right-side-container {
+    margin: -3rem auto !important;
+    height: 61% !important;
+  }
+  .radio-label {
+    height: 5.5rem !important ;
+  }
+  .item-plan {
+    padding-top: 0rem !important;
+  }
+  .plans-label-container {
+    gap: 0rem !important;
+  }
+  .plans-container {
+    gap: 1rem !important;
   }
 }

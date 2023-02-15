@@ -1,8 +1,9 @@
 .sidebar-container {
-  width: 25%;
+  width: 28%;
   height: 100%;
   background-image: url(../../images/bg-sidebar-desktop.svg);
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 0.7rem;
   ul {
     list-style: none;
@@ -24,7 +25,7 @@
       }
       .step-number {
         border: 0.05rem solid $neutral-white-color;
-        border-radius: 20rem;
+        border-radius: 50%;
         padding: 0.8rem 1.4rem;
         height: min-content;
         margin-right: 1.7rem;
