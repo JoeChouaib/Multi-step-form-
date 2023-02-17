@@ -287,12 +287,12 @@ html {
               }
               .mat-mdc-form-field-infix {
                 padding-top: 2.5rem !important;
-                height: 8rem;
+                height: 7rem;
               }
             }
             .column-flexed-wrapper .first-step-label {
               margin-bottom: 0.4rem;
-              font-size: 1.6rem;
+              font-size: 1.5rem;
             }
           }
           .btns {
@@ -387,7 +387,7 @@ html {
 }
 
 // Phone
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 380px) {
   html {
     font-size: 8px;
     body {
@@ -414,7 +414,7 @@ html {
               }
               .mat-mdc-form-field-infix {
                 padding-top: 1rem !important;
-                height: 5rem;
+                height: 5.5rem;
               }
             }
           }
