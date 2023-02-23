@@ -5,7 +5,14 @@ import { FormService } from '../form.service';
 @Component({
   selector: 'app-ons',
   templateUrl: './ons.component.html',
-  styleUrls: ['./ons.component.scss'],
+  styles: [
+    `
+      :host {
+        height: 30rem;
+        width: 100%;
+      }
+    `,
+  ],
 })
 export class OnsComponent implements OnInit {
   @Input() form: FormGroup;

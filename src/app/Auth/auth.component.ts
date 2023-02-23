@@ -5,7 +5,6 @@ import { FormService } from './form.service';
 @Component({
   selector: 'app-auth',
   templateUrl: './auth.component.html',
-  styleUrls: ['./auth.component.scss'],
 })
 export class AuthComponent implements OnInit {
   currentStep: number = 1;

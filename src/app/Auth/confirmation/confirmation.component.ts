@@ -4,7 +4,14 @@ import { FormService } from '../form.service';
 @Component({
   selector: 'app-confirmation',
   templateUrl: './confirmation.component.html',
-  styleUrls: ['./confirmation.component.scss'],
+  styles: [
+    `
+      :host {
+        height: 30rem;
+        width: 100%;
+      }
+    `,
+  ],
 })
 export class ConfirmationComponent {
   @Input() summary: any = {};

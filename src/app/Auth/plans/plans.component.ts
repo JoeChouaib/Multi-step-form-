@@ -6,7 +6,14 @@ import { FormService } from '../form.service';
 @Component({
   selector: 'app-plans',
   templateUrl: './plans.component.html',
-  styleUrls: ['./plans.component.scss'],
+  styles: [
+    `
+      :host {
+        height: 30rem;
+        width: 100%;
+      }
+    `,
+  ],
 })
 export class PlansComponent implements OnInit {
   @Input() form: FormGroup;

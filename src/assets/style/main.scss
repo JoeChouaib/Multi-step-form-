@@ -205,7 +205,6 @@ html {
 }
 
 // bigger screens Desktop
-
 @media only screen and (min-width: 1365px) {
   html {
     font-size: 13px;
@@ -232,7 +231,6 @@ html {
 }
 
 // Tablet Media Queries
-
 @media only screen and (max-width: 769px) {
   html {
     font-size: 9px;
@@ -268,117 +266,111 @@ html {
           padding: 3rem 2rem;
           margin: -5rem auto;
           border-radius: 1.7rem;
-          header {
-            margin-bottom: 3rem;
+          .subForm {
+            header {
+              margin-bottom: 3rem;
+              h1 {
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+              }
+            }
+            .first-step-form-wrapper {
+              height: 26rem;
+              justify-content: space-between;
+
+              .form-field {
+                .input-field {
+                  font-size: 1.8rem !important;
+                }
+                .err-msg {
+                  top: -2.5rem;
+                }
+                .mat-mdc-form-field-infix {
+                  padding-top: 1.9rem !important;
+                  height: 6.5rem;
+                }
+              }
+              .column-flexed-wrapper .first-step-label {
+                margin-bottom: 0.4rem;
+                font-size: 1.5rem;
+              }
+            }
+            .btns {
+              position: absolute;
+              background-color: $neutral-albaster-color;
+              bottom: 0rem;
+              left: 0rem;
+              padding: 6%;
+              width: 88%;
+              .mat-mdc-raised-button.mat-mdc-button-base {
+                width: 12rem;
+                height: 3.3rem;
+                .mdc-button__label {
+                  font-size: 1.24rem;
+                }
+              }
+            }
+
+            // second step
+            form {
+              .plans-container {
+                gap: 2rem;
+                .plans-label-container {
+                  flex-direction: column;
+                  gap: 0rem;
+                  .radio-wrapper {
+                    width: 100%;
+                    .radio-label {
+                      height: 7rem;
+                      flex-direction: row;
+
+                      img {
+                        width: 4rem;
+                        margin: 1rem;
+                      }
+
+                      .item-plan {
+                        padding-top: 1rem;
+                        font-size: 1.2rem;
+                      }
+
+                      .yearly-sub-benifits {
+                        font-size: 1.4rem;
+                      }
+                    }
+                  }
+                }
+                .toggle-switch-container {
+                  width: 100%;
+                }
+              }
+            }
+            // Ons
+
+            .ons-wrapper {
+              margin-bottom: 4rem;
+              .ons-spans-wrapper {
+                margin-left: 8rem;
+              }
+            }
+            // confirmation
+            .confirmation-wrapper {
+              .total-cost-wrapper {
+                margin: 2.5rem 0rem 0rem 2rem;
+              }
+            }
+          }
+          // success msg
+          .thanking-msg-wrapper {
+            img {
+              width: 6rem;
+            }
             h1 {
-              font-size: 2.5rem;
-              margin-bottom: 2rem;
+              margin: 2.5rem 0rem 2rem 0rem;
             }
-          }
-          .first-step-form-wrapper {
-            height: 26rem;
-            justify-content: space-between;
-            .form-field {
-              .input-field {
-                font-size: 2rem !important;
-              }
-              .err-msg {
-                top: -2.5rem;
-              }
-              .mat-mdc-form-field-infix {
-                padding-top: 2.5rem !important;
-                height: 7rem;
-              }
-            }
-            .column-flexed-wrapper .first-step-label {
-              margin-bottom: 0.4rem;
-              font-size: 1.5rem;
-            }
-          }
-          .btns {
-            position: absolute;
-            background-color: $neutral-albaster-color;
-            bottom: 0rem;
-            left: 0rem;
-            padding: 6%;
-            width: 88%;
-            .mat-mdc-raised-button.mat-mdc-button-base {
-              width: 12rem;
-              height: 3.3rem;
-              .mdc-button__label {
-                font-size: 1.24rem;
-              }
-            }
-          }
-        }
-        // second step
-        .plans-container {
-          gap: 2rem;
-          .plans-label-container {
-            flex-direction: column;
-            gap: 0rem !important;
-            .radio-wrapper {
-              width: 100% !important;
-              .radio-label {
-                height: 8rem;
-                width: 100%;
-                flex-direction: row;
-                img {
-                  width: 3.5rem !important;
-                  margin: 1rem !important;
-                }
-                .item-plan {
-                  padding-top: 1rem;
-                  font-size: 1.2rem;
-                }
-
-                .yearly-sub-benifits {
-                  font-size: 1.4rem;
-                }
-              }
-            }
-          }
-          .toggle-switch-container {
-            width: 100%;
-          }
-        }
-        // Ons
-
-        .ons-wrapper {
-          margin-bottom: 4rem !important;
-
-          .ons-spans-wrapper {
-            margin-left: 5rem !important;
-            .option-name {
-              font-size: 1.8rem;
-            }
-            .option-description {
+            p {
               font-size: 1.6rem;
             }
-
-            .additioanl-fees-span {
-              font-size: 1.6rem;
-            }
-          }
-        }
-        // confirmation
-        .colored-wrapper {
-          width: 100%;
-        }
-        .total-cost-wrapper {
-          width: 90%;
-          margin: 2.5rem 0rem 0rem 2rem;
-        }
-        // success msg
-        .thanking-msg-wrapper {
-          img {
-            width: 6rem !important;
-          }
-          h1 {
-            margin: 2.5rem 0rem 2rem 0rem !important;
-          }
-          p {
-            font-size: 1.6rem !important;
           }
         }
       }
@@ -392,83 +384,58 @@ html {
     font-size: 8px;
     body {
       .auth-wrapper {
+        // sidebar
         .sidebar-container {
           ul {
             width: 51%;
             .step-number {
-              padding: 0.6rem 1.4rem !important;
+              padding: 0.6rem 1.4rem;
             }
           }
         }
         .right-side-container {
-          margin: -2rem auto;
-          height: 57%;
-
-          .first-step-form-wrapper {
-            .form-field {
-              .input-field {
-                font-size: 1.6rem !important;
-              }
-              .err-msg {
-                top: -2rem;
-              }
-              .mat-mdc-form-field-infix {
-                padding-top: 1rem !important;
-                height: 5.5rem;
-              }
-            }
-          }
-        }
-        // second step
-        .plans-container {
-          gap: 3rem !important;
-          .plans-label-container {
-            flex-direction: column;
-            gap: 0.5rem !important;
-            .radio-wrapper {
-              width: 100% !important;
-              .radio-label {
-                height: 6rem;
-
-                img {
-                  width: 3.5rem !important;
-                  margin: 1rem !important;
+          height: 50%;
+          margin: -5rem auto;
+          .subForm {
+            .first-step-form-wrapper {
+              .form-field {
+                .input-field {
+                  font-size: 1.6rem !important;
                 }
-                .item-plan {
-                  padding-top: 1rem;
-                  font-size: 1.2rem;
+                .err-msg {
+                  top: -2rem;
                 }
-
-                .yearly-sub-benifits {
-                  font-size: 1.4rem;
+                .mat-mdc-form-field-infix {
+                  padding-top: 1.1rem !important;
+                  height: 5.5rem;
                 }
               }
             }
+            // second step
+            form {
+              .plans-container {
+                gap: 3rem;
+                .plans-label-container {
+                  gap: 0.5rem;
+                }
+              }
+            }
+            // Ons
+            .ons-wrapper {
+              .ons-spans-wrapper {
+                margin-left: 6rem;
+              }
+            }
+            // confirmation
           }
-          .toggle-switch-container {
-            width: 100%;
+          // success msg
+          .thanking-msg-wrapper {
+            p {
+              font-size: 1.4rem;
+            }
           }
         }
       }
     }
-  }
-}
-
-@media only screen and (max-width: 321px) {
-  .right-side-container {
-    margin: -3rem auto !important;
-    height: 61% !important;
-  }
-  .radio-label {
-    height: 5.5rem !important ;
-  }
-  .item-plan {
-    padding-top: 0rem !important;
-  }
-  .plans-label-container {
-    gap: 0rem !important;
-  }
-  .plans-container {
-    gap: 1rem !important;
   }
 }
